@@ -2,6 +2,7 @@ package homework.lesson4;
 
 public class FinalExample {
     public static void main(String[] args) {
+
         //Es ays kodov voxjunum em user ogtagorcoxin:
         System.out.println("BAREV DZEZ");
         //Es ays kodov harcnum em user ogtagorcoxi tramadrutyun@:
@@ -14,6 +15,6 @@ public class FinalExample {
         System.out.println("DE SKSENQ");
         //Es ays koderov iragorcum em final gorcnakan@
         System.out.println("GREQ DZER TARETIV@");
-        final short num = 3000
+        final short num = 3000;
     }
 }
