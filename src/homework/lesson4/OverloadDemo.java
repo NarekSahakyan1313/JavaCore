@@ -1,33 +1,23 @@
 package homework.lesson4;
 
-public class OverloadDemo {
-    public static void main(String[] args) {
+class OverloadDemo {
+    void test (int i, int i1) {
+        System.out.println("Պարամետրերը բացակայում են");
+    }
+    void test (double a) {
+        System.out.println("Ներքին զանգի փոխակերպում " + " test(double) a: " + a);
 
     }
-    void test () {
-        System.out.println("Пapaмeтpы отсутствуют");
 
+    public static class Overload2 {
+        public static void main(String[] args) {
+            OverloadDemo ob = new OverloadDemo();
+            int i = 88;
+            ob.test(10, 20);
+            ob.test(10, 20);
+            ob.test(i);
+            ob.test(123.2);
 
-        void test ( int а, int b) {
-            System.out.println("a и Ь: •+а+• "+ "b");
-
-
-            void test(double а){
-                System.out.println("Bнyтpeннee преобразование при вызо)"
-                        + "test(douЬle) а:" + а);
-                class Overload {
-
-                    static void main(String args[])
-
-                    OverloadDemo оЬ = new OverloadDemo();
-                    int i = 88;
-ob.test();
-ob.test(lO,20);
-оЬ.test(i);
-
-
-//метода test(douЬle)
-        ob.test(123.2);
-
-                }
-            }}}}
+        }
+    }
+}
